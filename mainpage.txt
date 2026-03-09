@@ -1,0 +1,129 @@
+# mainpage.txt
+# Comando cURL para obtener todos los regalos
+
+curl -X GET http://localhost:5000/api/gifts \
+  -H "Content-Type: application/json"
+
+# Salida:
+[
+  {
+    "_id": "65a1b2c3d4e5f67890123456",
+    "name": "Peluche de Oso",
+    "description": "Peluche suave y adorable de 30cm",
+    "price": 25.99,
+    "category": "Juguetes",
+    "image": "https://ejemplo.com/images/oso.jpg",
+    "stock": 15,
+    "rating": 4.5
+  },
+  {
+    "_id": "65a1b2c3d4e5f67890123457",
+    "name": "Caja de Chocolates",
+    "description": "Surtido de chocolates finos",
+    "price": 35.50,
+    "category": "Gourmet",
+    "image": "https://ejemplo.com/images/chocolates.jpg",
+    "stock": 30,
+    "rating": 4.8
+  },
+  {
+    "_id": "65a1b2c3d4e5f67890123458",
+    "name": "Set de Té",
+    "description": "Taza y té premium",
+    "price": 29.99,
+    "category": "Hogar",
+    "image": "https://ejemplo.com/images/te.jpg",
+    "stock": 20,
+    "rating": 4.3
+  },
+  {
+    "_id": "65a1b2c3d4e5f67890123459",
+    "name": "Reloj de Pulsera",
+    "description": "Reloj elegante de acero inoxidable",
+    "price": 89.99,
+    "category": "Accesorios",
+    "image": "https://ejemplo.com/images/reloj.jpg",
+    "stock": 8,
+    "rating": 4.6
+  },
+  {
+    "_id": "65a1b2c3d4e5f6789012345a",
+    "name": "Perfume Floral",
+    "description": "Fragancia fresca y duradera",
+    "price": 45.00,
+    "category": "Belleza",
+    "image": "https://ejemplo.com/images/perfume.jpg",
+    "stock": 12,
+    "rating": 4.7
+  },
+  {
+    "_id": "65a1b2c3d4e5f6789012345b",
+    "name": "Libro de Cocina",
+    "description": "Recetas internacionales",
+    "price": 32.50,
+    "category": "Libros",
+    "image": "https://ejemplo.com/images/libro.jpg",
+    "stock": 25,
+    "rating": 4.4
+  },
+  {
+    "_id": "65a1b2c3d4e5f6789012345c",
+    "name": "Planta Suculenta",
+    "description": "Planta decorativa en maceta",
+    "price": 18.99,
+    "category": "Jardinería",
+    "image": "https://ejemplo.com/images/planta.jpg",
+    "stock": 40,
+    "rating": 4.2
+  },
+  {
+    "_id": "65a1b2c3d4e5f6789012345d",
+    "name": "Auriculares Bluetooth",
+    "description": "Inalámbricos con cancelación de ruido",
+    "price": 79.99,
+    "category": "Electrónica",
+    "image": "https://ejemplo.com/images/auriculares.jpg",
+    "stock": 10,
+    "rating": 4.9
+  },
+  {
+    "_id": "65a1b2c3d4e5f6789012345e",
+    "name": "Bufanda de Lana",
+    "description": "Suave y abrigadora",
+    "price": 22.00,
+    "category": "Ropa",
+    "image": "https://ejemplo.com/images/bufanda.jpg",
+    "stock": 18,
+    "rating": 4.1
+  },
+  {
+    "_id": "65a1b2c3d4e5f6789012345f",
+    "name": "Set de Maquillaje",
+    "description": "Colección de 12 piezas",
+    "price": 55.00,
+    "category": "Belleza",
+    "image": "https://ejemplo.com/images/maquillaje.jpg",
+    "stock": 7,
+    "rating": 4.5
+  },
+  {
+    "_id": "65a1b2c3d4e5f67890123460",
+    "name": "Botella Deportiva",
+    "description": "Acero inoxidable, 1 litro",
+    "price": 19.99,
+    "category": "Deportes",
+    "image": "https://ejemplo.com/images/botella.jpg",
+    "stock": 35,
+    "rating": 4.3
+  },
+  {
+    "_id": "65a1b2c3d4e5f67890123461",
+    "name": "Juego de Mesa",
+    "description": "Para toda la familia",
+    "price": 42.00,
+    "category": "Juguetes",
+    "image": "https://ejemplo.com/images/juego.jpg",
+    "stock": 12,
+    "rating": 4.6
+  }
+]
