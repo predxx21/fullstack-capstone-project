@@ -1,0 +1,16 @@
+# register.txt
+# Comando cURL para registrar un usuario
+
+curl -X POST http://localhost:5000/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Juan Pérez",
+    "email": "juan.perez@email.com",
+    "password": "Password123!"
+  }'
+
+# Salida:
+{
+  "message": "Usuario registrado exitosamente",
+  "userId": "65a1b2c3d4e5f67890123466"
+}
