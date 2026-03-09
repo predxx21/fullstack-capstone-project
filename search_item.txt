@@ -1,0 +1,75 @@
+# search_item.txt
+# Comando cURL para buscar elementos por categoría
+
+curl -X GET "http://localhost:5000/api/search?category=Juguetes&minPrice=20&maxPrice=50" \
+  -H "Content-Type: application/json"
+
+# Salida:
+[
+  {
+    "_id": "65a1b2c3d4e5f67890123456",
+    "name": "Peluche de Oso",
+    "description": "Peluche suave y adorable de 30cm",
+    "price": 25.99,
+    "category": "Juguetes",
+    "image": "https://ejemplo.com/images/oso.jpg",
+    "stock": 15,
+    "rating": 4.5
+  },
+  {
+    "_id": "65a1b2c3d4e5f67890123461",
+    "name": "Juego de Mesa",
+    "description": "Para toda la familia",
+    "price": 42.00,
+    "category": "Juguetes",
+    "image": "https://ejemplo.com/images/juego.jpg",
+    "stock": 12,
+    "rating": 4.6
+  }
+]
+
+# Búsqueda por texto
+curl -X GET "http://localhost:5000/api/search?query=chocolate" \
+  -H "Content-Type: application/json"
+
+# Salida:
+[
+  {
+    "_id": "65a1b2c3d4e5f67890123457",
+    "name": "Caja de Chocolates",
+    "description": "Surtido de chocolates finos",
+    "price": 35.50,
+    "category": "Gourmet",
+    "image": "https://ejemplo.com/images/chocolates.jpg",
+    "stock": 30,
+    "rating": 4.8
+  }
+]
+
+# Búsqueda por múltiples filtros
+curl -X GET "http://localhost:5000/api/search?category=Belleza&maxPrice=60" \
+  -H "Content-Type: application/json"
+
+# Salida:
+[
+  {
+    "_id": "65a1b2c3d4e5f6789012345a",
+    "name": "Perfume Floral",
+    "description": "Fragancia fresca y duradera",
+    "price": 45.00,
+    "category": "Belleza",
+    "image": "https://ejemplo.com/images/perfume.jpg",
+    "stock": 12,
+    "rating": 4.7
+  },
+  {
+    "_id": "65a1b2c3d4e5f6789012345f",
+    "name": "Set de Maquillaje",
+    "description": "Colección de 12 piezas",
+    "price": 55.00,
+    "category": "Belleza",
+    "image": "https://ejemplo.com/images/maquillaje.jpg",
+    "stock": 7,
+    "rating": 4.5
+  }
+]
