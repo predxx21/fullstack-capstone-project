@@ -1,0 +1,20 @@
+# login.txt
+# Comando cURL para iniciar sesión
+
+curl -X POST http://localhost:5000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "juan.perez@email.com",
+    "password": "Password123!"
+  }'
+
+# Salida:
+{
+  "message": "Login exitoso",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWExYjJjM2Q0ZTVmNjc4OTAxMjM0NjYiLCJlbWFpbCI6Imp1YW4ucGVyZXpAZW1haWwuY29tIiwibmFtZSI6Ikp1YW4gUMOpcmV6IiwiaWF0IjoxNzA1MTIzNDU2LCJleHAiOjE3MDUyMDk4NTZ9.Xyz123ABC456def789GHI",
+  "user": {
+    "id": "65a1b2c3d4e5f67890123466",
+    "name": "Juan Pérez",
+    "email": "juan.perez@email.com"
+  }
+}
